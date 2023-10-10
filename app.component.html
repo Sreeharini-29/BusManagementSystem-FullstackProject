@@ -1,0 +1,85 @@
+
+<nav class="navbar navbar-expand-sm bg-info navbar-dark"  style="max-width: 150%">
+  <a *ngIf="userService.isUserLoggedIn()" class="navbar-brand" href="#">
+    <img src="data:image/jpeg;base64,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" alt="Logo" class="navbar-logo">
+  </a>
+  <ul class="navbar-nav">
+    
+    <li class="nav-item">
+
+      <a *ngIf="!userService.isUserLoggedIn()" routerLink="/signin" class="nav-link">
+Signin
+      </a>
+    </li>
+    <li class="nav-item">
+      <a *ngIf="!userService.isUserLoggedIn()" routerLink="signup" routerLinkActive="active" class="nav-link" >Signup</a>
+    </li>
+   
+   
+<div style="margin-top: 60px;"  *ngIf="userService.isUserLoggedIn()">
+    <div class="dropdown">
+      <button class="btn btn-success" >Bus Details</button>
+      <div class="dropdown-content">
+        <a *ngIf="userService.isUserLoggedIn()" routerLink="see-all-buses" routerLinkActive="active">Buslist</a>
+        <a *ngIf="userService.isUserLoggedIn()" routerLink="create-bus" routerLinkActive="active">Add new bus</a>
+        
+      </div>
+    </div>
+    
+    <div class="dropdown">
+      <button class="btn btn-success" >Route Details</button>
+      <div class="dropdown-content">
+        <a *ngIf="userService.isUserLoggedIn()" routerLink="see-all-routes" routerLinkActive="active">Routelist</a>
+        <a *ngIf="userService.isUserLoggedIn()" routerLink="create-route" routerLinkActive="active">Add new route</a>
+        
+      </div>
+    </div>
+   
+    <div class="dropdown">
+      <button class="btn btn-success"  >Agency Details</button>
+      <div class="dropdown-content">
+        <a *ngIf="userService.isUserLoggedIn()" routerLink="see-all-agency" routerLinkActive="active">Agencylist</a>
+        <a *ngIf="userService.isUserLoggedIn()" routerLink="create-agency" routerLinkActive="active">Add new agency</a>
+        
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="btn btn-success" >Feedback Details</button>
+      <div class="dropdown-content">
+        <a *ngIf="userService.isUserLoggedIn()" routerLink="see-all-feedback" routerLinkActive="active">Feedbacklist</a>
+        <a *ngIf="userService.isUserLoggedIn()"routerLink="feedback" routerLinkActive="active">Add new feedback</a>
+        
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="btn btn-success" >Booking Details</button>
+      <div class="dropdown-content">
+        <a *ngIf="userService.isUserLoggedIn()" routerLink="see-all-booking" routerLinkActive="active">Bookinglist</a>
+       
+      </div>
+    </div>
+    
+   
+    <li class="nav-item">
+      <a *ngIf="userService.isUserLoggedIn()" routerLink="aboutus" routerLinkActive="active" class="nav-link">
+        AboutUs <i class="fas fa-users"></i></a>
+        <li>
+          <li  class="nav-item"   style="margin-left: 70px;">
+      
+            <a *ngIf="userService.isUserLoggedIn()" routerLinkActive="active" class="nav-link"><i class="bi bi-box-arrow-right"></i>
+              <span  (click)="logOut()">
+              Logout
+            </span>
+            </a>
+          </li>
+  </div>
+  </ul>
+</nav>
+
+
+
+<div style="width: 100%;height: 90vh;">
+
+
+  <router-outlet></router-outlet>
+</div>
